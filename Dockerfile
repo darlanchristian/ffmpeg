@@ -14,5 +14,5 @@ RUN npm install --production
 COPY server.js ./
 RUN mkdir -p videos
 
-EXPOSE 3000
+EXPOSE 80
 CMD ["npm", "start"]
