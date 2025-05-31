@@ -1,6 +1,9 @@
 # 1) Base Node.js
 FROM node:18-slim
 
+docker build --no-cache -t easypanel/ffmpeg-api-ok:latest .
+
+
 # 2) Instala o FFmpeg
 RUN apt-get update \
  && apt-get install -y ffmpeg \
